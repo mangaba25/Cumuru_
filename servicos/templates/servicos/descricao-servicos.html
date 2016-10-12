@@ -1,0 +1,28 @@
+{% extends "servico.html" %}
+
+{% block title %}
+{{ current_category }} | {{ block.super }}
+{% endblock %}
+
+
+  
+{% block content %}
+
+
+  
+{% for servico in object_list %}
+                  <div class=" col-xs-12 col-sm-4 col-md-3">
+                  <a href="{{ servico.get_absolute_url }}">
+                    <div class="thumbnail">
+                    {% if servico.image_1%}
+                      <img src="{{ servico.image_1.url }}" alt="...">
+                    {% endif %}
+                      <div class="caption">
+                        <h4>{{ servico.name }}</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>                
+{% endfor %}
+{% endblock %}
+

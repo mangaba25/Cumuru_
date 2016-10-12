@@ -1,0 +1,148 @@
+#cabecalho{
+    background-color: #fff;
+    border-color: white;
+}
+#bs-example-navbar-collapse-1 li{
+            font-size: 18px;
+            margin-top: 10px;
+
+        }
+
+
+#myCarousel{
+    margin-bottom: 30px;
+    margin-top: -5px; 
+    border-style: inset;
+    border-style: outset;
+    border-width: 10px;
+    border-color: gainsboro;
+    border-radius: 12px;}
+
+
+
+#paragrafo p{
+    margin-bottom: -15px;
+    font-size: 14px;
+}
+
+#unidade {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    }
+.row h4 {
+    font-size: 25px;
+    padding: 0px;
+    text-align: center;
+    color: #808080;
+    font-family: 'Bad Script', cursive;
+    }
+.row p {
+    color: #696969;
+    font-family: 'Dancing Script', cursive;
+    word-spacing: 3px;
+    font-size: 16px;
+    font-family: verdana, sans-serif;
+    text-align: justify;
+    margin-top: 20px;
+    }
+#p{
+    font-size: 16px;
+    margin-top: -10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-top: -20px;
+    }
+#unidade h2{
+    color: #696969;
+    font-size: 25px;
+    margin-bottom: -5px;
+}   
+h2{
+    margin-top: -35px;
+    color: #696969;
+    font-size: 25px;
+    padding: 14px;
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    	}
+    	
+h2 strong{
+    font-size: 45px;
+    font-family: 'Bad Script', cursive;
+    margin-bottom: 20px;
+    }
+    
+h3{
+    color: #696969;
+    font-family: 'Bad Script', cursive;
+    }
+
+#rodape p{
+    text-align: center;
+    
+    }
+#contato{
+   margin-top: 100px;
+}
+
+.caption{
+    margin:-10px;
+}
+
+#capa{
+
+    margin-bottom: 30px; 
+    border-radius: 8px;
+}
+#dica{
+    margin-top: 100px;
+    margin-bottom: 70px;
+    padding: 30px;
+
+}
+#dica h1{
+    text-shadow: 4px 4px 5px #ccc;
+    color: #00BFFF;
+    font-family: 'Bad Script', cursive;
+    text-align: center;
+}
+#dica p{
+    margin:15px;
+    font-family: 'Bad Script', cursive;
+    margin-bottom: -15px;
+    font-size: 20px;
+}
+
+
+#aviso{
+
+    margin-bottom: 100px;
+    padding: 30px;
+}
+#aviso h1{
+    text-shadow: 4px 4px 5px #ccc;
+    color: #FF4500;
+    font-family: 'Bad Script', cursive;
+    text-align: center;
+}
+#aviso p{
+    margin:15px;
+    font-family: 'Bad Script', cursive;
+    margin-bottom: -15px;
+    font-size: 20px;
+
+}
+
+#titulo-comochegar{
+    font-family: 'Bad Script', cursive;
+    text-align: center;
+    color: #696969;
+}
+
+#paginacao{
+    text-align: center;
+}
+
