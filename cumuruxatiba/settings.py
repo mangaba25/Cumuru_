@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import dj_database_url
 
 
 
@@ -28,7 +29,6 @@ SECRET_KEY = '7qm&*$n$3pe*7c$gdrr8sx7q2=9zy10#ekx_qa2qq*_2w&1q!e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = []
 
 
@@ -146,6 +146,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'cumuruxatiba', 'images')
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+ALLOWED_HOSTS = ['*']
 
 
 
