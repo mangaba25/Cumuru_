@@ -6,6 +6,6 @@ from . import views
 
 urlpatterns = [
 	url(r'^$', views.listar, name='listar'),
-	# url(r'^(?P<slug>[\w_-]+)/$', views.category, name='category'),
+	url(r'^(?P<slug>[\w_-]+)/$', views.category, name='category'),
 	url(r'^(?P<slug>[\w_-]+)/$', views.servico, name='servico'),
 ]

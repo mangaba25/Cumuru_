@@ -5,6 +5,8 @@ class Home(models.Model):
 	slug = models.SlugField('Identificador',unique=True)
 	image = models.ImageField(upload_to='cumuruxatiba/images', null=True, blank=True)
 	description = models.CharField('Descrição',max_length=120)
+	link = models.CharField('link',max_length=120, blank=True)
+	palavralink = models.CharField('palavra-link',max_length=120, blank=True)
 	subtitle = models.CharField('Legenda', max_length=100)
 	content = models.TextField('Conteudo')
 	created = models.DateTimeField('Criado em', auto_now_add=True)

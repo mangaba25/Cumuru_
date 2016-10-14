@@ -10,8 +10,8 @@ Serviços | {{ block.super }}
                   <div class=" col-xs-12 col-sm-4 col-md-3">
                   <a href="{{ servicos.get_absolute_url }}">
                   <div class="thumbnail">
-                  {% if servicos.image_1%}
-                    <img src="{{ servicos.image_1.url }}" alt="...">
+                  {% if servicos.image%}
+                    <img src="{{ servicos.image.url }}" alt="...">
                   {% endif %}
                     <div  class="caption" >
                       <h4>{{ servicos.name }}</h4>

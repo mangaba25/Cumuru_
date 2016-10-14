@@ -1,3 +1,5 @@
+
+
 #cabecalho{
     background-color: #fff;
     border-color: white;
@@ -18,18 +20,43 @@
     border-color: gainsboro;
     border-radius: 12px;}
 
+#paragrafo {
+    margin-bottom: 40px;
 
-
-#paragrafo p{
-    margin-bottom: -15px;
-    font-size: 14px;
 }
 
+#paragrafo p{
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: -22px;
+    font-size: 14px;
+}
+#paragrafo h4{
+    font-size: 18px;
+    font-family: 'Dancing Script', cursive; 
+    margin-bottom: -12px;
+    text-align: left;
+}
+/*.row .thumbnail{
+    padding-left: 15px;
+    padding-right: 15px;
+}*/
+.row .thumbnail p {
+        font-family: 'Dancing Script', cursive;
+        margin-top: -10px;
+    font-size: 14px;
+}
+.row .thumbnail h4{
+    font-family: 'Bad Script', cursive;
+    margin-bottom: 30px;
+}
+.thumbnail .caption h4{
+    margin: 2px;
+}
 #unidade {
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     }
 .row h4 {
     font-size: 25px;
@@ -37,6 +64,7 @@
     text-align: center;
     color: #808080;
     font-family: 'Bad Script', cursive;
+    
     }
 .row p {
     color: #696969;
@@ -85,11 +113,11 @@ h3{
     
     }
 #contato{
-   margin-top: 100px;
+   margin-top: 20px;
 }
 
 .caption{
-    margin:-10px;
+    margin:-2px;
 }
 
 #capa{
@@ -98,8 +126,8 @@ h3{
     border-radius: 8px;
 }
 #dica{
-    margin-top: 100px;
-    margin-bottom: 70px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     padding: 30px;
 
 }
@@ -119,7 +147,7 @@ h3{
 
 #aviso{
 
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     padding: 30px;
 }
 #aviso h1{

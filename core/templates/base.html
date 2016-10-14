@@ -6,14 +6,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{%  static 'assets/favicon.ico' %}">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{% block title %}Cumuruxatiba{% endblock %}</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link href="{% static 'assets/bootstrap.min.css' %}" rel="stylesheet">
+<!--     <link href="{% static 'assets/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'assets/fonts/glyphicons-halflings-regular.eot' %}" >
+    <link href="{% static 'assets/fonts/glyphicons-halflings-regular.svg' %}" >
+    <link href="{% static 'assets/fonts/glyphicons-halflings-regular.ttf' %}" >
+    <link href="{% static 'assets/fonts/glyphicons-halflings-regular.woff' %}" >
+    <link href="{% static 'assets/fonts/glyphicons-halflings-regular.woff2' %}" >
+     -->
 	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Farsan" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
@@ -78,6 +84,15 @@
 
 		                <li><a href="{% url 'praias:listar' %}">Praias</a></li>
 		                <li><a href="{% url 'servicos:listar' %}">Serviços</a></li>
+		               <!--  <li class="dropdown">
+		                  <a href="{% url 'passeios:listar' %}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Serviços<span class="caret"></span></a>
+		                  <ul class="dropdown-menu" role="menu">
+		                  	{% for category in categoriaservico %}
+		                    	<li><a href="{{ category.get_absolute_url }}">{{category}}</a></li>
+		                    {% endfor %}
+
+		                  </ul>
+		                </li> -->
 
 		              </ul>
 		            </div>

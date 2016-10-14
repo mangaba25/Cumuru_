@@ -11,8 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
-import dj_database_url
-from whitenoise import WhiteNoise
+
 
 
 
@@ -56,7 +55,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -84,6 +82,7 @@ TEMPLATES = [
                 'ondeficar.context_processors.categoriaondeficar',
                 'ondecomer.context_processors.categoriaondecomer',
                 'passeios.context_processors.categoriapasseio',
+                'servicos.context_processors.categoriaservico',
             ],
         },
     },
@@ -149,12 +148,7 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
 
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-ALLOWED_HOSTS = ['*']
 
 try:
     from .local_settings import *
