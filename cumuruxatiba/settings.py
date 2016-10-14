@@ -28,7 +28,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = '7qm&*$n$3pe*7c$gdrr8sx7q2=9zy10#ekx_qa2qq*_2w&1q!e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = []
 
 
@@ -150,10 +150,6 @@ STATICFILES_DIRS = (
 
 
 
-try:
-    from .local_settings import *
-except ImportError:
-    pass
 
 
 
