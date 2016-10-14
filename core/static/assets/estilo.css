@@ -3,10 +3,15 @@
 #cabecalho{
     background-color: #fff;
     border-color: white;
+
+}
+#container{
+    margin-top:130px;
 }
 #bs-example-navbar-collapse-1 li{
             font-size: 18px;
             margin-top: 10px;
+
 
         }
 
