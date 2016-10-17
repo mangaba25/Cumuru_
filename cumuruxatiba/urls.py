@@ -26,6 +26,7 @@ from ondeficar import views as views_ondeficar
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^como-chegar$', views.comochegar, name='comochegar'),
     url(r'^onde-comer/', include('ondecomer.urls', namespace='ondecomer')),
     url(r'^onde-ficar/', include('ondeficar.urls', namespace='ondeficar')),
     url(r'^servicos/', include('servicos.urls', namespace='servicos')),

@@ -185,4 +185,20 @@ h3{
 
 #paginacao{
     text-align: center;
+
+}
+
+#como-chegar{
+    margin-top: 200px;
+}
+li{
+    text-align: center;
+    list-style-type: none;
+}
+#h5comochegar{
+    text-align:center;
+    color: red;
+}
+.embed-responsive{
+    margin-bottom: 30px;
 }
