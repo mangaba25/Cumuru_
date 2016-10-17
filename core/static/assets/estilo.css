@@ -189,6 +189,8 @@ h3{
 }
 
 #como-chegar{
+    padding-left: 40px;
+    padding-right: 40px;
     margin-top: 170px;
 }
 li{
@@ -199,6 +201,7 @@ li{
     text-align:center;
     color: red;
 }
+
 .embed-responsive{
     margin-bottom: 30px;
 }
