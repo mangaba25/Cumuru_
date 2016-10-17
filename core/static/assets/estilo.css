@@ -193,9 +193,13 @@ h3{
     padding-right: 40px;
     margin-top: 170px;
 }
-li{
-    text-align: center;
-    list-style-type: none;
+#como-chegar h3{
+   padding-left: 20px;
+    padding-right: 20px;
+}
+#como-chegar p{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #h5comochegar{
     text-align:center;
