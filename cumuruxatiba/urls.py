@@ -23,6 +23,7 @@ from core import views
 from passeios import views as views_passeios
 from ondecomer import views as views_ondecomer
 from ondeficar import views as views_ondeficar
+from artesanatos import views as views_artesanatos
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
@@ -31,6 +32,7 @@ urlpatterns = [
     url(r'^onde-ficar/', include('ondeficar.urls', namespace='ondeficar')),
     url(r'^servicos/', include('servicos.urls', namespace='servicos')),
     url(r'^praias/', include('praias.urls', namespace='praias')),
+    url(r'^artesanatos/', include('artesanatos.urls', namespace='artesanatos')),
     url(r'^passeios/', include('passeios.urls', namespace='passeios')),
 
     url(r'^admin/', admin.site.urls),

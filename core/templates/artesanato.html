@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+
+{% block home %}
+<div id="container" class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1" >
+
+                
+                    {% for foto in capa %}
+                        <img id="capa" class="img-responsive" src="{{ foto.image.url }}" alt="{{ foto.description }}">
+                    {% endfor %}
+                
+                {% block content %}
+
+                {% endblock %}
+
+        </div>             
+    </div>
+</div>
+{% endblock %}

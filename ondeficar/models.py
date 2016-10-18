@@ -46,7 +46,7 @@ class OndeFicar(models.Model):
 	description = models.TextField('Descrição', blank=True)
 	address = models.CharField('Endereço', max_length=100, blank=True)
 	email = models.EmailField('E-mail', max_length=50, blank=True)
-	contact = models.CharField('Nome', max_length=100, blank=True)
+	contact = models.CharField('Contato', max_length=100, blank=True)
 	site = models.CharField('Site', max_length=100, blank=True)
 	link = models.CharField('link',max_length=120, blank=True)
 

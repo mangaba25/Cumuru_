@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block title %}
-	{{ passeio }} | {{ block.super }}
+	{{ artesanato }} | {{ block.super }}
 {% endblock %}
 {% block home %}
 <div id="container" class="container"  >
@@ -17,24 +17,23 @@
 				</ol>
 
 					 <!-- Wrapper for slides -->
-				{{passeio.descripition_1}}
 				<div class="carousel-inner" role="listbox"  >
 					<div class="item active">
-					<img src="{{passeio.image_1.url}}" alt="{{passeio.decription_1}}" width="1000" height="500">
+					<img src="{{artesanato.image_1.url}}" alt="{{artesanato.decription_1}}" width="1000" height="500">
 					</div>
 
 
 					<div class="item">
-					<img src="{{passeio.image_2.url}}" alt="{{passeio.decription_2}}" width="1000" height="500">
+					<img src="{{artesanato.image_2.url}}" alt="{{artesanato.decription_2}}" width="1000" height="500">
 
 					</div>
 
 					<div class="item">
-					<img src="{{passeio.image_3.url}}" alt="{{passeio.decription_3}}" width="1000" height="500">
+					<img src="{{artesanato.image_3.url}}" alt="{{artesanato.decription_3}}" width="1000" height="500">
 					</div>
 
 					<div class="item">
-					<img src="{{passeio.image_4.url}}" alt="{{passeio.decription_4}}" width="1000" height="500">
+					<img src="{{artesanato.image_4.url}}" alt="{{artesanato.decription_4}}" width="1000" height="500">
 					</div>
 				</div>	
 					
@@ -56,23 +55,25 @@
 
 			<div class="row">
 				<div class="col-xs-12 ">
-					<div class="col-xs-12"  ">
+					<div class="col-xs-12" style="margin-bottom: -15px; ">
 					
-						<h4><strong>{{passeio.name}}</strong> </h4>
+						<h4><strong>{{artesanato.name}}</strong> </h4>
 							<p>
-							    {{passeio.description|linebreaks}}
+							    {{artesanato.description|linebreaks}}
 							</p>
 							
 					</div>
-					<div id="paragrafo" class="col-md-12  " >
-						<h4>Contato</h4>
-						<p><strong><span class="glyphicon glyphicon-map-marker" aria-hidden="true">&ensp;</span>Endereço</strong> : {{passeio.address}}</p>
-						<p><strong><span class="glyphicon glyphicon-envelope" aria-hidden="true">&ensp;</span>E-mail</strong> : {{passeio.email}}</p>
-						<p><strong><span class="glyphicon glyphicon-earphone" aria-hidden="true">&ensp;</span>Telefone </strong>: {{passeio.contact}}</p>
-						<p><strong><span class="glyphicon glyphicon-globe" aria-hidden="true">&ensp;</span>Site</strong> : <a href="{{ passeio.link }}" target="_blank">{{passeio.site}}</a></p>
+					<div id="paragrafo" class="col-md-6  " >
+						<h4>Contato </h4>
+						<p><strong><span class="glyphicon glyphicon-map-marker" aria-hidden="true">&ensp;</span>Endereço</strong> : {{artesanato.address}}</p>
+						<p><strong><span class="glyphicon glyphicon-envelope" aria-hidden="true">&ensp;</span>E-mail</strong> : {{artesanato.email}}</p>
+						<p><strong><span class="glyphicon glyphicon-earphone" aria-hidden="true">&ensp;</span>Telefone </strong>: {{artesanato.contact}}</p>
+						<p><strong><span class="glyphicon glyphicon-globe" aria-hidden="true">&ensp;</span>Site</strong> : <a href="{{artesanato.link}}" target="_blank">{{artesanato.site}}</a></p>
 				  	</div>
+				  	
 				</div>
 			</div>
+
 		</div>
 	</div>
 </div>
