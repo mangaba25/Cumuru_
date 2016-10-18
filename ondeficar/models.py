@@ -48,6 +48,7 @@ class OndeFicar(models.Model):
 	email = models.EmailField('E-mail', max_length=50, blank=True)
 	contact = models.CharField('Nome', max_length=100, blank=True)
 	site = models.CharField('Site', max_length=100, blank=True)
+	link = models.CharField('link',max_length=120, blank=True)
 
 
 	created = models.DateTimeField('Criado em', auto_now_add=True)
