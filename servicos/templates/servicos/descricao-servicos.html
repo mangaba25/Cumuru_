@@ -1,0 +1,36 @@
+{% extends "servico.html" %}
+
+{% block title %}
+{{ current_category }} | {{ block.super }}
+{% endblock %}
+
+
+  
+{% block content %}
+
+{% for foto in capa %}
+                    <img id="capa" class="img-responsive"  src="{{ foto.image.url }}" alt="{{ foto.description }}">
+               {% endfor %}
+
+{% for servico in object_list %}
+                 <!--  <div id="contatoservico" class=" col-xs-12 col-sm-4 col-md-4">
+                      <h4>{{ servico.name }}</h4>
+                          <p><strong><span class="glyphicon glyphicon-map-marker" aria-hidden="true">&ensp;</span>Endereço</strong> : {{servico.address}}</p>
+                           <p><strong><span class="glyphicon glyphicon-envelope" aria-hidden="true">&ensp;</span>E-mail</strong> : {{servico.email}}</p>
+                           <p><strong><span class="glyphicon glyphicon-earphone" aria-hidden="true">&ensp;</span>Telefone </strong>: {{servico.contact}}</p>
+                            <p><strong><span class="glyphicon glyphicon-globe" aria-hidden="true">&ensp;</span>Site</strong> : {{servico.site}}</p>
+  
+                  </div> -->
+                  <div class=" col-xs-12 col-sm-12 col-md-12">
+                    <div class="thumbnail">
+                      <h4>{{ servico.name }}</h4>
+                          <p><strong><span class="glyphicon glyphicon-map-marker" aria-hidden="true">&ensp;</span>Endereço</strong> : {{servico.address}}</p>
+                           <p><strong><span class="glyphicon glyphicon-envelope" aria-hidden="true">&ensp;</span>E-mail</strong> : {{servico.email}}</p>
+                           <p><strong><span class="glyphicon glyphicon-earphone" aria-hidden="true">&ensp;</span>Telefone </strong>: {{servico.contact}}</p>
+                            <p><strong><span class="glyphicon glyphicon-globe" aria-hidden="true">&ensp;</span>Site</strong> : <a href="{{ servico.link }}">{{servico.site}}</a></p>
+                    </div>  
+                  </div>
+                                  
+{% endfor %}
+{% endblock %}
+
