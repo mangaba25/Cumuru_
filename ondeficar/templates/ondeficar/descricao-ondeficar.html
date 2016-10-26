@@ -13,7 +13,7 @@
                {% endfor %}   
   
 {% for ondeficar in object_list %}
-                  <div class=" col-xs-12 col-sm-4 col-md-3">
+                  <div id="lista" class=" col-xs-12 col-sm-4 col-md-3">
                   <a href='{{ ondeficar.get_absolute_url }}'>
                   <div class="thumbnail">
                   {% if ondeficar.image_1%}

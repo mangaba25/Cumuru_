@@ -180,7 +180,7 @@ h3{
 #titulo-comochegar{
     font-family: 'Bad Script', cursive;
     text-align: center;
-    color: #696969;
+    color:ff #696969;
 }
 
 #paginacao{
@@ -210,4 +210,8 @@ h3{
 #mapa{
     margin-bottom: 30px;
     margin-top: 30px;
+}
+
+#lista{
+     min-height: 170px;
 }

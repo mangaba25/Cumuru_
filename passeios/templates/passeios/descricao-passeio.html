@@ -12,7 +12,7 @@
                     <img id="capa" class="img-responsive" src="{{ foto.image.url }}" alt="{{ foto.description }}">
                {% endfor %}  
 {% for passeio in object_list %}
-                  <div class=" col-xs-12 col-sm-4 col-md-3">
+                  <div id="lista" class=" col-xs-12 col-sm-4 col-md-3">
                   <a href='{{ passeio.get_absolute_url }}'>
                   <div class="thumbnail">
                   {% if passeio.image_1%}

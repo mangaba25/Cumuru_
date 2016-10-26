@@ -3,7 +3,7 @@
 {% block content %}
             
 {% for product in object_list %}
-                  <div class=" col-xs-12 col-sm-4 col-md-3">
+                  <div id="lista" class=" col-xs-12 col-sm-4 col-md-3">
                   <a href='{{ product.get_absolute_url }}'>
                   <div class="thumbnail">
                   {% if product.image_1%}
