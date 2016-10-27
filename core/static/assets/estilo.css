@@ -24,7 +24,8 @@
     border-style: outset;
     border-width: 10px;
     border-color: gainsboro;
-    border-radius: 12px;}
+    border-radius: 12px;
+}
 
 #paragrafo {
     margin-bottom: 40px;
@@ -145,16 +146,17 @@ h3{
 
 }
 #dica h1{
+    margin-bottom: 20px;
     text-shadow: 4px 4px 5px #ccc;
     color: #00BFFF;
     font-family: 'Bad Script', cursive;
     text-align: center;
 }
 #dica p{
-    margin:15px;
-    font-family: 'Bad Script', cursive;
-    margin-bottom: -15px;
-    font-size: 20px;
+/*    margin:15px;
+*/    font-family: 'Bad Script', cursive;
+/*    margin-bottom: -15px;
+*/    font-size: 20px;
 }
 
 
@@ -164,16 +166,17 @@ h3{
     padding: 30px;
 }
 #aviso h1{
+    margin-bottom: 20px;
     text-shadow: 4px 4px 5px #ccc;
     color: #FF4500;
     font-family: 'Bad Script', cursive;
     text-align: center;
 }
 #aviso p{
-    margin:15px;
-    font-family: 'Bad Script', cursive;
-    margin-bottom: -15px;
-    font-size: 20px;
+/*    margin:15px;
+*/    font-family: 'Bad Script', cursive;
+/*    margin-bottom: -15px;
+*/    font-size: 20px;
 
 }
 
