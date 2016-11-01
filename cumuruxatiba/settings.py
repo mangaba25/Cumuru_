@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'praias',
     'home',
     'artesanatos',
+
 ]
 
 MIDDLEWARE = [
