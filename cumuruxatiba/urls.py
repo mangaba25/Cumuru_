@@ -19,6 +19,7 @@ from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.contrib import admin
 import django.views.defaults
+from django.contrib.sitemaps.views import sitemap
 from core import views
 from passeios import views as views_passeios
 from ondecomer import views as views_ondecomer
@@ -34,6 +35,7 @@ urlpatterns = [
     url(r'^praias/', include('praias.urls', namespace='praias')),
     url(r'^artesanatos/', include('artesanatos.urls', namespace='artesanatos')),
     url(r'^passeios/', include('passeios.urls', namespace='passeios')),
+    # url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps},name='django.contrib.sitemaps.views.sitemap'),
 
     url(r'^admin/', admin.site.urls),
     url(r'^404/$', django.views.defaults.page_not_found, ),
@@ -41,3 +43,6 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns +=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns +=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+

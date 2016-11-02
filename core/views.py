@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from home.models import Home, Aviso, Dica
 
+
 # Create your views here.
 def index(request):
 	home = Home.objects.all()
@@ -15,6 +16,8 @@ def index(request):
 
 def comochegar(request):
 	return render(request, 'comochegar.html')
+
+
 
 
 
