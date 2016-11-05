@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'praias',
     'home',
     'artesanatos',
-
+    # 'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
