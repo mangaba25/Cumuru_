@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.sitemaps import Sitemap
 from home.models import Home, Aviso, Dica
 
 
@@ -16,12 +17,3 @@ def index(request):
 
 def comochegar(request):
 	return render(request, 'comochegar.html')
-
-
-
-
-
-
-
-
-

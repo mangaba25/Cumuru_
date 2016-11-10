@@ -15,16 +15,22 @@ Including another URLconf
 """
 
 from django.conf import settings
+from django.contrib.sitemaps.views import sitemap
 from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.contrib import admin
 import django.views.defaults
-from django.contrib.sitemaps.views import sitemap
-from core import views
+from ondecomer.models import OndeComer
+
 from passeios import views as views_passeios
 from ondecomer import views as views_ondecomer
 from ondeficar import views as views_ondeficar
 from artesanatos import views as views_artesanatos
+from core import views
+
+
+
+from . import sitemaps
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
@@ -35,14 +41,19 @@ urlpatterns = [
     url(r'^praias/', include('praias.urls', namespace='praias')),
     url(r'^artesanatos/', include('artesanatos.urls', namespace='artesanatos')),
     url(r'^passeios/', include('passeios.urls', namespace='passeios')),
-    # url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps},name='django.contrib.sitemaps.views.sitemap'),
+    url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps},
+    name='django.contrib.sitemaps.views.sitemap'),
+
 
     url(r'^admin/', admin.site.urls),
     url(r'^404/$', django.views.defaults.page_not_found, ),
-] 
+
+]
+
+
+
 if settings.DEBUG:
     urlpatterns +=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns +=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
 
 
