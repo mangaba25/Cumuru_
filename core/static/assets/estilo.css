@@ -8,11 +8,14 @@
 }
 #container{
     margin-top:130px;
+<<<<<<< HEAD
 
 }
 #container1{
     margin-top: 250px;
 
+=======
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
 }
 #bs-example-navbar-collapse-1 li{
             font-size: 18px;
@@ -29,8 +32,12 @@
     border-style: outset;
     border-width: 10px;
     border-color: gainsboro;
+<<<<<<< HEAD
     border-radius: 12px;
 }
+=======
+    border-radius: 12px;}
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
 
 #paragrafo {
     margin-bottom: 40px;
@@ -72,13 +79,22 @@
 
 }
 #unidade {
+<<<<<<< HEAD
     padding-left: 10px;
     padding-right: 10px;
+=======
+    padding-left: 20px;
+    padding-right: 20px;
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
     margin-top: 50px;
     margin-bottom: 30px;
     }
 .row h4 {
+<<<<<<< HEAD
     font-size: 20px;
+=======
+    font-size: 25px;
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
     padding: 0px;
     text-align: center;
     color: #808080;
@@ -151,17 +167,27 @@ h3{
 
 }
 #dica h1{
+<<<<<<< HEAD
     margin-bottom: 20px;
+=======
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
     text-shadow: 4px 4px 5px #ccc;
     color: #00BFFF;
     font-family: 'Bad Script', cursive;
     text-align: center;
 }
 #dica p{
+<<<<<<< HEAD
 /*    margin:15px;
 */    font-family: 'Bad Script', cursive;
 /*    margin-bottom: -15px;
 */    font-size: 20px;
+=======
+    margin:15px;
+    font-family: 'Bad Script', cursive;
+    margin-bottom: -15px;
+    font-size: 20px;
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
 }
 
 
@@ -171,24 +197,38 @@ h3{
     padding: 30px;
 }
 #aviso h1{
+<<<<<<< HEAD
     margin-bottom: 20px;
+=======
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
     text-shadow: 4px 4px 5px #ccc;
     color: #FF4500;
     font-family: 'Bad Script', cursive;
     text-align: center;
 }
 #aviso p{
+<<<<<<< HEAD
 /*    margin:15px;
 */    font-family: 'Bad Script', cursive;
 /*    margin-bottom: -15px;
 */    font-size: 20px;
+=======
+    margin:15px;
+    font-family: 'Bad Script', cursive;
+    margin-bottom: -15px;
+    font-size: 20px;
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
 
 }
 
 #titulo-comochegar{
     font-family: 'Bad Script', cursive;
     text-align: center;
+<<<<<<< HEAD
     color:ff #696969;
+=======
+    color: #696969;
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
 }
 
 #paginacao{
@@ -197,8 +237,13 @@ h3{
 }
 
 #como-chegar{
+<<<<<<< HEAD
     padding-left: 20px;
     padding-right: 20px;
+=======
+    padding-left: 40px;
+    padding-right: 40px;
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
     margin-top: 170px;
 }
 #como-chegar h3{
@@ -207,14 +252,20 @@ h3{
 }
 #como-chegar p{
     text-align: left;
+<<<<<<< HEAD
     padding-left: 10px;
     padding-right: 10px;
+=======
+    padding-left: 20px;
+    padding-right: 20px;
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
 }
 #h5comochegar{
     text-align:center;
     color: red;
 }
 
+<<<<<<< HEAD
 #mapa{
     margin-bottom: 30px;
     margin-top: 30px;
@@ -222,4 +273,8 @@ h3{
 
 #lista{
      min-height: 170px;
+=======
+.embed-responsive{
+    margin-bottom: 30px;
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
 }

@@ -12,6 +12,12 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 
 import os
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -22,12 +28,21 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+<<<<<<< HEAD
 SECRET_KEY = '28^4$_*=l554r08@)x6vb)r^5jp9=i^^#vei12g_g)l^pq1nu7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
+=======
+SECRET_KEY = '7qm&*$n$3pe*7c$gdrr8sx7q2=9zy10#ekx_qa2qq*_2w&1q!e'
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+ALLOWED_HOSTS = ['*']
+
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
 
 
 # Application definition
@@ -38,8 +53,14 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+<<<<<<< HEAD
     'django.contrib.staticfiles',
 # minhas aplicacoes
+=======
+
+    'django.contrib.staticfiles',
+    # minhas aplicacoes
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
     'core',
     'ondeficar',
     'ondecomer',
@@ -48,7 +69,10 @@ INSTALLED_APPS = [
     'praias',
     'home',
     'artesanatos',
+<<<<<<< HEAD
     'django.contrib.sitemaps',
+=======
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
 ]
 
 MIDDLEWARE = [
@@ -74,6 +98,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+<<<<<<< HEAD
+=======
+
+
+              
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
                 'ondeficar.context_processors.categoriaondeficar',
                 'ondecomer.context_processors.categoriaondecomer',
                 'passeios.context_processors.categoriapasseio',
@@ -140,3 +170,13 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f

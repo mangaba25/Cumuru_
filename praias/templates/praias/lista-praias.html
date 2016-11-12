@@ -10,7 +10,11 @@ Praias | {{ block.super }}
                     <img id="capa" class="img-responsive" src="{{ foto.image.url }}" alt="{{ foto.description }}">
                {% endfor %}
 {% for ondecomer in object_list %}
+<<<<<<< HEAD
                   <div id="lista" class=" col-xs-12 col-sm-4 col-md-3" >
+=======
+                  <div class=" col-xs-12 col-sm-4 col-md-3">
+>>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
                     <a href="{{ ondecomer.get_absolute_url }}">
                       <div class="thumbnail">
                       {% if ondecomer.image_1%}
