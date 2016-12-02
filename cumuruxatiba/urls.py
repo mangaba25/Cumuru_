@@ -15,25 +15,24 @@ Including another URLconf
 """
 
 from django.conf import settings
-<<<<<<< HEAD
+
 from django.contrib.sitemaps.views import sitemap
-=======
->>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
+
 from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.contrib import admin
 import django.views.defaults
-<<<<<<< HEAD
+
 from ondecomer.models import OndeComer
 
-=======
+
 from core import views
->>>>>>> 372fb89680b88e5dd6fb36c75288ade693f18f8f
+
 from passeios import views as views_passeios
 from ondecomer import views as views_ondecomer
 from ondeficar import views as views_ondeficar
 from artesanatos import views as views_artesanatos
-<<<<<<< HEAD
+
 from core import views
 
 
